@@ -1,29 +1,27 @@
--- This file contains the configuration for the which-key.nvim plugin in Neovim.
+-- Muestra las combinaciones de teclas disponibles en Neovim
 
 return {
-  -- Plugin: which-key.nvim
-  -- URL: https://github.com/folke/which-key.nvim
-  -- Description: A Neovim plugin that displays a popup with possible keybindings of the command you started typing.
+
   "folke/which-key.nvim",
 
-  event = "VeryLazy", -- Load this plugin on the 'VeryLazy' event
+   event = "VeryLazy", -- Se carga solo cuando Neovim está inactivo
 
   init = function()
-    -- Set the timeout for key sequences
+     -- Tiempo de espera para atajos de teclas
     vim.o.timeout = true
-    vim.o.timeoutlen = 300 -- Set the timeout length to 300 milliseconds
+     vim.o.timeoutlen = 300 -- Tiempo de espera (ms)
   end,
 
   keys = {
     {
-      -- Keybinding to show which-key popup
+       -- Muestra menú de combinaciones disponibles
       "<leader>?",
       function()
-        require("which-key").show({ global = false }) -- Show the which-key popup for local keybindings
+         require("which-key").show({ global = false }) -- Muestra las combinaciones locales disponibles
       end,
     },
     {
-      -- Define a group for Obsidian-related commands
+       -- Grupo para comandos de Obsidian
       "<leader>o",
       group = "Obsidian",
     },

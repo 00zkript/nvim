@@ -1,3 +1,4 @@
+-- Añade autocompletado avanzado para comandos, menciones y archivos
 return {
   "saghen/blink.cmp",
   lazy = true,

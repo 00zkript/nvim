@@ -1,3 +1,7 @@
+-- Plugin: kdheepak/lazygit.nvim
+-- Descripción: Permite lanzar la UI de LazyGit desde Neovim.
+-- Documentación: https://github.com/kdheepak/lazygit.nvim
+
 return {
     "kdheepak/lazygit.nvim",
     lazy = true,

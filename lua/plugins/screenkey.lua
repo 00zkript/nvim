@@ -1,3 +1,4 @@
+-- Muestra en pantalla las teclas que presionas en tiempo real
 return {
   "NStefan002/screenkey.nvim",
   lazy = false,

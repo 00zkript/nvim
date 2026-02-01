@@ -1,4 +1,4 @@
--- This file contains the configuration for the nvim-dap plugin in Neovim.
+-- Permite depurar código en Neovim usando el protocolo DAP
 
 return {
   {

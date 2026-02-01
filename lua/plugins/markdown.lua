@@ -1,3 +1,4 @@
+-- Renderiza Markdown de forma avanzada con íconos y estilos
 return {
   "MeanderingProgrammer/render-markdown.nvim",
   dependencies = { "nvim-treesitter/nvim-treesitter", "nvim-mini/mini.nvim" }, -- if you use the mini.nvim suite

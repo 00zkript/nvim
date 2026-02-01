@@ -1,3 +1,4 @@
+-- Agrega soporte avanzado de snippets en Neovim
 return {
   {
     "L3MON4D3/LuaSnip",

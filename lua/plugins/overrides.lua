@@ -1,25 +1,18 @@
--- This file contains the configuration overrides for specific Neovim plugins.
+-- Configuración personalizada de plugins modificados por el usuario
 
 return {
-  -- Change configuration for trouble.nvim
+  -- Muestra diagnósticos en una lista ordenada
   {
-    -- Plugin: trouble.nvim
-    -- URL: https://github.com/folke/trouble.nvim
-    -- Description: A pretty list for showing diagnostics, references, telescope results, quickfix and location lists.
     "folke/trouble.nvim",
-    -- Options to be merged with the parent specification
-    opts = { use_diagnostic_signs = true }, -- Use diagnostic signs for trouble.nvim
+    opts = { use_diagnostic_signs = true }, -- Utiliza iconos de diagnóstico
   },
 
-  -- Add symbols-outline.nvim plugin
+  -- Visualiza los símbolos del buffer en forma de árbol
   {
-    -- Plugin: symbols-outline.nvim
-    -- URL: https://github.com/simrat39/symbols-outline.nvim
-    -- Description: A tree like view for symbols in Neovim using the Language Server Protocol.
     "simrat39/symbols-outline.nvim",
-    cmd = "SymbolsOutline", -- Command to open the symbols outline
-    keys = { { "<leader>cs", "<cmd>SymbolsOutline<cr>", desc = "Symbols Outline" } }, -- Keybinding to open the symbols outline
-    config = true, -- Use default configuration
+    cmd = "SymbolsOutline", -- Comando para abrir el árbol de símbolos
+    keys = { { "<leader>cs", "<cmd>SymbolsOutline<cr>", desc = "Abrir símbolos" } },
+    config = true,
   },
 
 

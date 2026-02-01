@@ -1,4 +1,8 @@
--- This file contains the configuration for disabling specific Neovim plugins.
+-- Plugins deshabilitados (disabled) para Neovim.
+-- Consulta cada plugin en su URL para ver detalles y documentación.
+-- Ejemplo:
+-- bufferline.nvim: https://github.com/akinsho/bufferline.nvim
+-- avante.nvim: https://github.com/yetone/avante.nvim
 
 return {
   {

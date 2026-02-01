@@ -1,8 +1,7 @@
+-- Asistente AI para prompts y ayuda interactiva en Neovim
 return {
   "NickvanDyke/opencode.nvim",
-  dependencies = {
-    { "folke/snacks.nvim", opts = { input = {}, picker = {}, terminal = {} } },
-  },
+
   keys = {
     {
       "<leader>aa",
@@ -105,10 +104,9 @@ return {
   config = function()
     vim.g.opencode_opts = {
       provider = {
-        snacks = {
-          win = {
-            position = "left",
-          },
+        enabled = "terminal",
+        terminal = {
+          -- posición y configuración opcional del terminal
         },
       },
     }

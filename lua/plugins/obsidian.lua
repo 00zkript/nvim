@@ -1,3 +1,4 @@
+-- Permite gestionar notas de Obsidian desde Neovim
 return {
   "obsidian-nvim/obsidian.nvim",
   version = "*", -- recommended, use latest release instead of latest commit
@@ -22,8 +23,8 @@ return {
       cmp = true,
     },
     picker = {
-      -- Set your preferred picker. Can be one of 'telescope.nvim', 'fzf-lua', 'mini.pick' or 'snacks.pick'.
-      name = "snacks.pick",
+      -- Elige el picker compatible que prefieras: 'telescope.nvim', 'fzf-lua' o 'mini.pick'.
+      name = "telescope.nvim",
     },
     -- Optional, define your own callbacks to further customize behavior.
     callbacks = {

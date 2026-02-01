@@ -1,3 +1,5 @@
+-- Ejemplo de configuración personalizada.
+-- Añade aquí plugins propios o configuraciones avanzadas.
 return {
 
 
@@ -32,8 +34,8 @@ return {
     init = function()
       -- Evitar conflictos con algunos atajos de LazyVim
       vim.g.VM_maps = {
-        ["Find Under"] = "<C-n>",
-        ["Find Subword Under"] = "<C-n>",
+        ["Find Under"] = "<C-d>",
+        ["Find Subword Under"] = "<C-d>",
       }
     end,
   },

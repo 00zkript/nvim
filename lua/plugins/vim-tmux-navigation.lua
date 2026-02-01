@@ -1,4 +1,4 @@
--- This file contains the configuration for the nvim-tmux-navigation plugin in Neovim.
+-- Navegación fluida entre paneles de Neovim y tmux
 
 return {
   -- Plugin: nvim-tmux-navigation

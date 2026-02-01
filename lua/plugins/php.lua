@@ -1,4 +1,5 @@
 -- ~/.config/nvim/lua/plugins/php.lua
+-- Permite soporte de lenguaje para PHP (PHPactor) y Lua (LuaLS) en Neovim
 return {
   {
     "neovim/nvim-lspconfig",
@@ -16,7 +17,7 @@ return {
              },
            },
          },
-         -- otros servidores que quieras agregar aquí
+         -- Aquí puedes agregar más servidores LSP que necesites
 
       },
     },

@@ -1,3 +1,4 @@
+-- Añade una colección de snippets comunitarios para múltiples lenguajes
 return {
   {
     "rafamadriz/friendly-snippets",

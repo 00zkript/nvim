@@ -1,3 +1,7 @@
+-- Plugin: nvim-telescope/telescope.nvim
+-- Descripción: Fuzzy finder y lanzador de acciones para archivos, buffers, etc.
+-- Documentación: https://github.com/nvim-telescope/telescope.nvim
+
 return {
   {
     "nvim-telescope/telescope.nvim",

@@ -1,17 +1,18 @@
+-- Permite agregar, eliminar o cambiar delimitadores como paréntesis y comillas fácilmente
 return {
     {
         "nvim-mini/mini.nvim",
         version = "*",
         mappings = {
-            add = "sa", -- Add surrounding in Normal and Visual modes
-            delete = "sd", -- Delete surrounding
-            find = "sf", -- Find surrounding (to the right)
-            find_left = "sF", -- Find surrounding (to the left)
-            highlight = "sh", -- Highlight surrounding
-            replace = "sr", -- Replace surrounding
+add = "sa", -- Añadir delimitador (normal y visual)
+delete = "sd", -- Eliminar delimitador
+find = "sf", -- Buscar delimitador hacia la derecha
+find_left = "sF", -- Buscar delimitador hacia la izquierda
+highlight = "sh", -- Resaltar delimitador
+replace = "sr", -- Reemplazar delimitador
 
-            suffix_last = "l", -- tuffix to search with "prev" method
-            suffix_next = "n", -- tuffix to search with "next" method
+suffix_last = "l", -- Sufijo para buscar hacia atrás
+suffix_next = "n", -- Sufijo para buscar hacia adelante
         },
         config = function()
             require("mini.surround").setup()

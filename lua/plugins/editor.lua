@@ -1,53 +1,24 @@
--- This file contains the configuration for various Neovim plugins related to the editor.
-
 return {
+  -- Permite previsualizar definiciones y métodos sin salir del buffer
   {
-    -- Plugin: goto-preview
-    -- URL: https://github.com/rmagatti/goto-preview
     "rmagatti/goto-preview",
     event = "BufEnter",
     config = true,
     keys = { ... },
   },
+  -- Resalta patrones usando expresiones regulares avanzadas
   {
-    -- Plugin: mini.hipatterns
-    -- URL: https://github.com/nvim-mini/mini.hipatterns
     "nvim-mini/mini.hipatterns",
     event = "BufReadPre",
     opts = { ... },
   },
+  -- Añade utilidades para trabajar con Git desde Neovim
   {
-    -- Plugin: git.nvim
-    -- URL: https://github.com/dinhhuy258/git.nvim
     "dinhhuy258/git.nvim",
     event = "BufReadPre",
     opts = { ... },
   },
-  -- {
-  --   "CopilotC-Nvim/CopilotChat.nvim",
-  --   dependencies = { "nvim-lua/plenary.nvim" },
-  --   build = "make tiktoken",
-  --   opts = {
-  --     window = {
-  --       layout = "float",
-  --       width = 80,
-  --       height = 20,
-  --       border = "rounded",
-  --       title = "🤖 Copilot Chat",
-  --       zindex = 100
-  --     },
-  --     headers = {
-  --       user = "👤 Tú",
-  --       assistant = "🤖 Copilot",
-  --     },
-  --     separator = "━━",
-  --     auto_fold = true,
-  --     auto_insert_mode = true,
-  --   },
-  --   config = function(_, opts)
-  --     require("CopilotChat").setup(opts)
-  --   end,
-  -- },
+  -- Añade autocompletado AI mediante GitHub Copilot
   {
     "github/copilot.vim",
     -- event = "InsertEnter",

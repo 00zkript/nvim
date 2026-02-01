@@ -1,9 +1,10 @@
+-- Permite usar linters y formateadores como fuentes LSP en Neovim
 return {
   {
     "nvimtools/none-ls.nvim",
     opts = function(_, opts)
       opts.sources = vim.tbl_filter(function(source)
-        -- Filtra fuera cualquier linter/formateador de phpcs, phpcbf, php_cs_fixer y linters de estilo de Markdown
+        -- Filtra cualquier linter o formateador relacionado con PHP y Markdown
         local n = string.lower(source.name or "")
         return not (
           n:find("phpcs") or n:find("phpcbf") or n:find("php_cs_fixer") or
