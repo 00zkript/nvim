@@ -1,0 +1,17 @@
+-- headlines.nvim DESACTIVADO para testeo de bandas molestas
+-- return {
+--   "lukas-reineke/headlines.nvim",
+--   ft = { "markdown", "org", "norg" },
+--   config = function()
+--     require('headlines').setup({
+--       markdown = {
+--         headline_highlights = {
+--           "Headline1", "Headline2", "Headline3", "Headline4", "Headline5", "Headline6"
+--         },
+--         fat_headlines = false,
+--         bullets = { ">", "*", "-", "+" },
+--         codeblock_highlight = true,
+--       }
+--     })
+--   end,
+-- }
